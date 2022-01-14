@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "mcfixer",
+  "version": "${version}",
+  "name": "MCFixer",
+  "description": "Fixes things that are just WRONG in minecraft",
+  "authors": [
+    "Exo"
+  ],
+  "contact": {
+    "website": "https://static.wikia.nocookie.net/youtube/images/6/6e/Rick_rolllll.gif/revision/latest/scale-to-width-down/320?cb=20200530051224",
+    "repo": "https://github.com/ExoPlant/mcfixer"
+  },
+  "license": "MIT",
+  "icon": "assets/mcfixer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.frogastudios.mcfixer.client.MCFixerClient"
+    ],
+    "main": [
+      "com.frogastudios.mcfixer.MCFixer"
+    ]
+  },
+  "mixins": [
+    "mcfixer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
